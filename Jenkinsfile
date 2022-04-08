@@ -1,3 +1,5 @@
+def path = "C:/ProgramData/Jenkins/.jenkins/workspace/JenkinSeleniumTask/src/test/java/TestProject/TestCase.java"
+
 pipeline 
 {
   agent any											
@@ -7,7 +9,7 @@ pipeline
           {
             steps									
               {
-               bat "javac $WORKSPACE/src/test/java/TestProject/TestClass.java" 
+               bat "javac $WORKSPACE/src/test/java/TestProject/TestCase.java" 
               }
           }
       }
