@@ -10,7 +10,7 @@ pipeline
             steps									
               {
 	       bat "mvn clean install"
-               //bat "javac $WORKSPACE/src/test/java/TestProject/TestCase.java" 
+		      bat "javac ${path}" 
               }
           }
       }
